@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>DOM in JAVASCRIPT</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>DOM</legend>
+        <center>
+            <table border="2">
+                <tr>
+                    <td><label for="">Number_1</label></td>
+                    <td><input type="text" placeholder="enter the number_1" id="A" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Number_2</label></td>
+                    <td><input type="text" placeholder="enter the number_2" id="B" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Result</label></td>
+                    <td><input type="text" placeholder="result_set" id="C" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="ADD" onclick="Test_Case1()">
+                    <input type="submit" value="SUB" onclick="Test_Case2()">
+                    <input type="submit" value="MUL" onclick="Test_Case3()">
+                    <input type="submit" value="DIV" onclick="Test_Case4()"></td>
+                </tr>
+            </table>
+        </center>
+    </fieldset>
+
+    <script>
+        function Test_Case1()
+        {
+            var number_1=Number(document.getElementById("A").value) 
+            var number_2=Number(document.getElementById("B").value)
+            var res1=number_1+number_2 
+            document.getElementById("C").value=res1
+        }
+        function Test_Case2()
+        {
+            var number_1=Number(document.getElementById("A").value) 
+            var number_2=Number(document.getElementById("B").value)
+            var res1=number_1-number_2 
+            document.getElementById("C").value=res1
+        }
+        function Test_Case3()
+        {
+            var number_1=Number(document.getElementById("A").value) 
+            var number_2=Number(document.getElementById("B").value)
+            var res1=number_1*number_2 
+            document.getElementById("C").value=res1
+        }
+        function Test_Case4()
+        {
+            var number_1=Number(document.getElementById("A").value) 
+            var number_2=Number(document.getElementById("B").value)
+            var res1=number_1/number_2 
+            document.getElementById("C").value=res1
+        }
+        
+    </script>
+
+</body>
+</html>
+
+
+

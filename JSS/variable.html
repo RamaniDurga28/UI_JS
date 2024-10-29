@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+     <hr>
+     <center>
+        <!-- tt is a font style -->
+       <h1><tt>javascript events</tt></h1>
+       </center>
+       <br>
+       <fieldset>
+        <legend>Events in Js</legend>
+        <center>
+            <form action="#"method="post">
+                <input type = "submit" value = "SUBMIT" onclick ="Test_case1()"
+            </form>
+        </center>
+       </fieldset>
+       <script>
+        // function with return statement needs doc.write
+        function Test_case1(obj1,obj2,obj3){
+            return obj1+obj2*obj3
+        }
+        window.alert(Test_case1(12,28,10))
+        document.write(Test_case1(12,28,10))
+        document.write("<br>")
+        // function without return doesnot need doc.write
+        function test_case2(...a)
+        {
+            s=0
+            for (var i =0;i<a.length;i++)
+            {
+                s=s+a[i]
+            }
+            document.write("The sum of argument is:"+s)
+            document.write("<br>")
+        }
+              test_case2(10)
+              test_case2(10,20)
+              test_case2(10,20,30)
+    </script>
+</body>
+</html>

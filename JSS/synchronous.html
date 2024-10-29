@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <center>
+        <hr>
+    <h1><tt>JavaScript</tt></h1>
+    <hr>
+    </center>
+    <script>
+     var P1 = new Promise(function(resolve,reject){
+        var a=100+900 
+        if(a==1000)
+        {
+            resolve("Operation is done successfully ....")
+        }
+        else 
+        {
+            reject("Operation is not completed")
+        }
+     })
+        P1.then(function(fromResolve){
+            document.write('Request us:'+fromResolve)
+        }).catch(function(fromReject){
+            document.write("Request is:"+fromReject)
+        })
+    
+
+
+    </script>
+</body>
+</html>

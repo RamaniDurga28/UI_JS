@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mouseButton"> Hover over me</button>
+    <script>
+        let button=document.getElementById('mouseButton')
+        button.addEventListener('mouseover',function(){
+            console.log('mouse is over the button');
+            button.innerHTML="mouse is over the button"
+            
+        });
+        button.addEventListener('mouseout',function() {
+            console.log('mouse has left the button');
+            button.innerHTML="mouse is outside the button"
+          
+        });
+    </script>
+</body>
+</html>

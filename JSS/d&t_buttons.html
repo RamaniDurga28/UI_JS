@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <hr>
+    <center>
+    <h1><tt>JavaScript Events</tt></h1>
+    </center>
+    <hr>
+    <br>
+    <fieldset>
+        <legend>Date_Objects_Events</legend>
+        <center>
+            <table border="3">
+                <form action="" method="post">
+                    <tr>
+                        <td><input type="submit" value="YEAR" onclick="T1()"></td>
+                        <td><input type="submit" value="MONTH" onclick="T2()"></td>
+                        <td><input type="submit" value="DAY" onclick="T3()"></td>
+                        <td><input type="submit" value="DATE" onclick="T4()"></td>
+                        <td><input type="submit" value="HOURS" onclick="T5()"></td>
+                        <td><input type="submit" value="MINUTES" onclick="T6()"></td>
+                    </tr>
+                </form>
+            </table>
+        </center>
+    </fieldset>
+
+    <script>
+        function T1()
+        {
+            var a1 = new Date()
+            window.alert("Current_Year is:"+a1.getFullYear())
+        }
+        function T2() 
+        {
+            var b1 = new Date()
+            window.alert('Current_Month is:'+b1.getMonth())
+        }
+        function T3() 
+        {
+            var c1 = new Date() 
+            window.alert('Currer_Day is:'+c1.getDay())
+        }
+        function T4() 
+        {
+            var d1 = new Date() 
+            window.alert('Currer_Minutes is:'+e1.getDate())
+            
+        }
+        function T5() 
+        {
+            var e1 = new Date() 
+            window.alert('Currer_Hours is:'+d1.getHours())
+        }
+        function T6()
+        {
+            var e1 = new Date() 
+            window.alert('Currer_Minutes is:'+e1.getMinutes())
+        }
+    </script>
+
+
+</body>
+</html>
